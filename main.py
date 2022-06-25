@@ -65,8 +65,8 @@ def search():
         for data in result:
             print(f"""
 \tID:        {data[0]}
-\tNOMBRE:    {data[1]}
-\tEMAIL:     {data[2]}""")
+\tName:    {data[1]}
+\tEmail:     {data[2]}""")
 
 
 while True:
