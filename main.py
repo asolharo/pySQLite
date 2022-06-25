@@ -1,5 +1,4 @@
 from os import system
-from sqlite3 import paramstyle
 import time
 import connection as conn
 

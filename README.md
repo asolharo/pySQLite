@@ -1,38 +1,52 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+This is a program delevoped on Python3 to practice and demonstrate a connection to an SQL database.
 
-{Provide a description the software that you wrote and how it integrates with a SQL Relational Database. Describe how to use your program.}
+I a menu with 6 options to manage the program. The options are:
 
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of how created the Relational Database.}
+1. Create user
+   This is to add a new record into the database
+2. View list of users
+   This is to print all the record from the database
+3. Update user
+   With this function you can modify a record
+4. Delete user
+   Using this function you can delete an specific record
+5. Search user
+   Here you can look for a record base on one data
+6. Exit
+   To close the program
 
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Relational Database
 
-{Describe the relational database you are using.}
+SQLite. This library is based on C and creates a local database with the benefit of not needing another server process. Even you can program an internal data storage contained in the applications.
 
-{Describe the structure (tables) of the relational database that you created.}
+The database I'm using here is a basic one:
+database:
+"users" (
+"id" INTEGER NOT NULL,
+"name" TEXT NOT NULL,
+"email" TEXT NOT NULL,
+PRIMARY KEY("id" AUTOINCREMENT)
+)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
+• VSCode 2 = for editing
+• Python3 = base language
+• I imported "time" to add a delay during menu selections
+• I imported "system" from "os" to clear the terminal during tasks.
+• SQLite3 = SQL library for database and connection
+• DB Browser for SQLite = application to monitor the content of the database
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [SQLite Python: Creating Tables](https://www.sqlitetutorial.net/sqlite-python/creating-tables/)
+- [sqlite3 — DB-API 2.0 interface for SQLite databases](https://docs.python.org/3.8/library/sqlite3.html)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- Update individual keys
+- More options to search
